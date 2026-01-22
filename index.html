@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamiyet</title>
     <style>
         body {
@@ -15,17 +16,19 @@
             align-items: center;
             overflow: hidden;
             position: relative;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         /* ARKADAN KAYAN GÜL */
         .rose {
             position: absolute;
             top: 50%;
-            right: -100px;
-            font-size: 80px;
+            right: -120px;
+            font-size: 70px;
             opacity: 0.15;
             z-index: 0;
-            animation: slide 25s linear infinite;
+            animation: slide 28s linear infinite;
         }
 
         @keyframes slide {
@@ -33,18 +36,19 @@
                 transform: translateX(0);
             }
             to {
-                transform: translateX(-120vw);
+                transform: translateX(-140vw);
             }
         }
 
         /* YAZI KARTI */
         .card {
             background-color: #020617;
-            max-width: 700px;
-            padding: 40px;
+            width: 100%;
+            max-width: 720px;
+            padding: 28px;
             border-radius: 16px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-            line-height: 1.8;
+            line-height: 1.7;
             position: relative;
             z-index: 1;
         }
@@ -52,19 +56,38 @@
         h1 {
             text-align: center;
             color: #f472b6;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
+            font-size: 26px;
         }
 
         p {
-            font-size: 18px;
+            font-size: 17px;
             white-space: pre-line;
         }
 
         .signature {
-            margin-top: 30px;
+            margin-top: 24px;
             text-align: right;
             font-style: italic;
             color: #94a3b8;
+            font-size: 15px;
+        }
+
+        /* TELEFON İÇİN EK DÜZENLEME */
+        @media (max-width: 480px) {
+            .card {
+                padding: 22px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .rose {
+                font-size: 60px;
+                opacity: 0.12;
+            }
         }
     </style>
 </head>
@@ -75,4 +98,18 @@
     <div class="card">
         <h1>Hamiyet</h1>
         <p>
-hamiyet ben
+hamiyet ben sana aşğım 5 aydır peşinde koşuyorum bugün anakarada gördüm diyince mutlu oldum
+keşke bende seni görseydim aylardır hisetiklerim boşuna gitimiyormuş gibi hisetim
+sana o kadar aşğım kim bir ben birde allah biliyor ama bir sen anlamıyorsun
+sana çiçek alacaktım ama tam address vermedin bilmiyorum
+senin için daha neler yapabilirim sana olan sevgimi nasıl daha nasıl kanıtlaya bilirim
+ama cidden seni çok seviyorum
+bana lütfen bir şans verirmisin benimle çıkarmısın?
+        </p>
+        <div class="signature">
+            — Kalbimden
+        </div>
+    </div>
+
+</body>
+</html>
