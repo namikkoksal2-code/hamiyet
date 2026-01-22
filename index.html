@@ -8,12 +8,36 @@
             background-color: #0f172a;
             color: #e5e7eb;
             font-family: Georgia, serif;
+            min-height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
+            overflow: hidden;
+            position: relative;
         }
+
+        /* ARKADAN KAYAN GÜL */
+        .rose {
+            position: absolute;
+            top: 50%;
+            right: -100px;
+            font-size: 80px;
+            opacity: 0.15;
+            z-index: 0;
+            animation: slide 25s linear infinite;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-120vw);
+            }
+        }
+
+        /* YAZI KARTI */
         .card {
             background-color: #020617;
             max-width: 700px;
@@ -21,21 +45,21 @@
             border-radius: 16px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
             line-height: 1.8;
-            text-align: center;
+            position: relative;
+            z-index: 1;
         }
-        .rose {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
+
         h1 {
+            text-align: center;
             color: #f472b6;
             margin-bottom: 30px;
         }
+
         p {
             font-size: 18px;
             white-space: pre-line;
-            text-align: left;
         }
+
         .signature {
             margin-top: 30px;
             text-align: right;
@@ -46,22 +70,9 @@
 </head>
 <body>
 
+    <div class="rose">🌹</div>
+
     <div class="card">
-        <div class="rose">🌹</div>
         <h1>Hamiyet</h1>
         <p>
-hamiyet ben sana aşğım 5 aydır peşinde koşuyorum bugün anakarada gördüm diyince mutlu oldum
-keşke bende seni görseydim aylardır hisetiklerim boşuna gitimiyormuş gibi hisetim
-sana o kadar aşğım kim bir ben birde allah biliyor ama bir sen anlamıyorsun
-sana çiçek alacaktım ama tam adres vermedin bilmiyorum
-senin için daha neler yapabilirim sana olan sevgimi nasıl daha nasıl kanıtlaya bilirim
-ama cidden seni çok seviyorum
-bana lütfen bir şans verirmisin benimle çıkarmısın?
-        </p>
-        <div class="signature">
-            — Kalbimden
-        </div>
-    </div>
-
-</body>
-</html>
+hamiyet ben
